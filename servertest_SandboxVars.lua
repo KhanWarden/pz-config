@@ -36,7 +36,7 @@ SandboxVars = {
     -- 23 = 21 Hours
     -- 24 = 22 Hours
     -- 25 = 23 Hours
-    DayLength = 3,
+    DayLength = 4,
     StartYear = 1,
     -- Default=July
     -- 1 = January
@@ -61,7 +61,7 @@ SandboxVars = {
     -- 6 = 9 PM
     -- 7 = 12 AM
     -- 8 = 2 AM
-    StartTime = 2,
+    StartTime = 1,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -70,7 +70,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    WaterShut = 2,
+    WaterShut = 3,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -79,7 +79,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    ElecShut = 2,
+    ElecShut = 3,
     -- Minimum=-1 Maximum=2147483647 Default=14
     WaterShutModifier = 14,
     -- Minimum=-1 Maximum=2147483647 Default=14
@@ -99,7 +99,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    CannedFoodLoot = 4,
+    CannedFoodLoot = 3,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -123,7 +123,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    MedicalLoot = 4,
+    MedicalLoot = 3,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -185,9 +185,9 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 1.0,
+    XpMultiplier = 3.0,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
-    XpMultiplierAffectsPassive = false,
+    XpMultiplierAffectsPassive = true,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
     ZombieAttractionMultiplier = 1.0,
     -- Governs whether cars are locked, need keys to start etc.
@@ -197,7 +197,7 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    Farming = 3,
+    Farming = 2,
     -- Controls the time it takes for food to break down in a composter. Default=2 Weeks
     -- 1 = 1 Week
     -- 2 = 2 Weeks
@@ -225,14 +225,14 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    Alarm = 4,
+    Alarm = 3,
     -- How frequently homes and buildings will be discovered locked Default=Very Often
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    LockedHouses = 6,
+    LockedHouses = 2,
     -- Spawn with chips, water bottle, school bag, baseball bat and a hammer.
     StarterKit = false,
     -- Nutritional value of food affects the player's condition.
@@ -422,14 +422,14 @@ SandboxVars = {
     -- Governs the chances of finding vehicles with gas in the tank. Default=Low
     -- 1 = Low
     -- 2 = Normal
-    ChanceHasGas = 1,
+    ChanceHasGas = 2,
     -- Governs how full gas tanks will be in discovered cars. Default=Low
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
     -- 5 = Very High
-    InitialGas = 2,
+    InitialGas = 3,
     -- Governs how full gas tanks in fuel station will be, initially. Default=Normal
     -- 1 = Empty
     -- 2 = Super Low
@@ -439,7 +439,7 @@ SandboxVars = {
     -- 6 = High
     -- 7 = Very High
     -- 8 = Full
-    FuelStationGas = 5,
+    FuelStationGas = 6,
     -- How gas-hungry vehicles on the map are. Minimum=0.00 Maximum=100.00 Default=1.00
     CarGasConsumption = 1.0,
     -- Default=Rare
@@ -454,7 +454,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    CarGeneralCondition = 2,
+    CarGeneralCondition = 3,
     -- Governs the amount of damage dealt to vehicles that crash. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -522,7 +522,7 @@ SandboxVars = {
         -- 1 = Blood + Saliva
         -- 2 = Saliva Only
         -- 3 = Everyone's Infected
-        Transmission = 1,
+        Transmission = 2,
         -- Controls how quickly the infection takes effect. Default=2-3 Days
         -- 1 = Instant
         -- 2 = 0-30 Seconds
@@ -588,15 +588,15 @@ SandboxVars = {
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationMultiplier = 1.0,
+        PopulationMultiplier = 0.8,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
         PopulationStartMultiplier = 1.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
-        PopulationPeakMultiplier = 1.5,
+        PopulationPeakMultiplier = 2.4,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
-        PopulationPeakDay = 28,
+        PopulationPeakDay = 14,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
-        RespawnHours = 72.0,
+        RespawnHours = 0.00,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
         RespawnUnseenHours = 16.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
